@@ -3753,6 +3753,9 @@ const headers = [_][]const u8{
 };
 
 const ffmpeg_cflags: []const []const u8 = &.{
+    "-fPIC",
+    "-DPIC",
+    "-fvisibility=hidden",
     "-D_ISOC99_SOURCE",
     "-D_FILE_OFFSET_BITS=64",
     "-D_LARGEFILE_SOURCE",
